@@ -5,11 +5,11 @@ import subprocess  # If you're using subprocess to run your Python script
 app = Flask(__name__)
 
 # Route to handle picture taking
-@app.route('/take-picture', methods=['POST'])
+@app.route('/take-image', methods=['POST'])
 def take_picture():
     try:
         # Call your Python script here, e.g., using subprocess
-        subprocess.run(["python", "your-script.py"])  # Replace this with your actual script
+        subprocess.run(["python", "take_image.py"])  # Replace this with your actual script
 
         img2_path = "img2.jpg"  # Path to the newly generated image
         if os.path.exists(img2_path):
