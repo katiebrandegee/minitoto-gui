@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [image, setImage] = useState(`${process.env.PUBLIC_URL}/img1.jpg`); // Default img1
+  const [image, setImage] = useState(`${process.env.PUBLIC_URL}/img1.png`); // Default img1
 
   // Function to handle button click to fetch img2 from the Flask backend
   const handleTakePicture = async () => {
