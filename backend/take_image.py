@@ -5,7 +5,7 @@ import cv2
 ip_address_1 = '192.168.3.7'
 # ip_address_2 = '192.168.3.4'
 target_brightness = 128
-filename1 = 'cup.png'
+filename1 = 'img1.png'
 # filename2 = 'cassette.png'
 
 if __name__ == '__main__':
@@ -15,8 +15,8 @@ if __name__ == '__main__':
 
 
     cam1.get_image(filename1)
-    img = cv2.imread('cup.png')
-    cv2.imshow("Window", img)
-    cv2.waitKey(5000)
-    cv2.destroyAllWindows()
+    # img = cv2.imread('cup.png')
+    # cv2.imshow("Window", img)
+    # cv2.waitKey(5000)
+    # cv2.destroyAllWindows()
     # cam2.get_image(filename2)
